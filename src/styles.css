@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import "@fontsource/kaushan-script";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body{
+
+    padding: 0;
+    background-color: #061724;
+}
+
+p{
+    margin:0%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+
+/* COMMON */
+
+.p-flex{
+    display: flex;
+}
+.p-flex-align-center{
+
+    align-items: center;
+}
+.p-flex-jc-sb{
+    justify-content: space-between;
+}
+
+
+/* WRAPPER CLASS*/

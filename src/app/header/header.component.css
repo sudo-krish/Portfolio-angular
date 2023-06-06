@@ -1,0 +1,520 @@
+
+/* Wrapper */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+.circle{
+  position: absolute;
+  background: #d4f1f9;
+  width: 350px; height: 180px;
+  margin-left: 0;
+  top: -125px; left:-120px ;
+  border-radius: 200 px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  z-index: -1;
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  
+
+}
+.center{
+  position: absolute;
+  background: transparent;
+  width: 25px; height: 25px;
+  margin-left: 0;
+  top: 55px; left:15px ;
+  border-radius: 200 px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  z-index: -1;
+  box-shadow: -10px -10px 0 0 #d4f1f9;
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  
+}
+
+
+/* header */
+
+.header {
+
+  width:100%;
+  margin-bottom: 30px;
+  margin-left: -5px;
+  margin-right: 0px;
+  padding: 5px;
+  overflow: hidden;
+  
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  color:#d4f1f9;
+  text-decoration: none;
+  font-family: "Kaushan Script";
+  font-size:large;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20 px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  cursor:pointer;
+  text-shadow: -1px 0 #061724, 0 1px #061724, 1px 0 #061724, 0 -1px #061724;
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  
+}
+
+.header .git{
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  right: 5%;
+  top: 25px;
+  position: absolute;
+  float: right;
+  text-decoration: none;
+  color: #d4f1f9;
+  margin-right: 100px;
+  transition:all .2s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+
+.header .links{
+  display: flex;
+  right: 2%;
+  top: 25px;
+  font-size: x-large;
+  position: absolute;
+  float: right;
+  text-decoration: none;
+  color: #d4f1f9;
+  margin-right: 70px;
+  transition:all .2s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.header .links:hover,.header .git:hover{
+  color:#061724;
+  text-shadow: -1px 0 #d4f1f9, 0 1px #d4f1f9, 1px 0 #d4f1f9, 0 -1px #d4f1f9;
+}
+
+
+.wave {
+  background-color: transparent;
+  position: absolute;
+  top: 180px;
+  height: 400%;
+  width: 400%;
+  border-radius: 50%;
+  left: -160%;
+  z-index: -1;
+  
+}
+
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(1000deg); }
+  
+  100% { transform: rotate(2000deg); }
+  
+}
+.header li a:hover .wave {
+  top: 70%;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  border-radius: 20 px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  font-family: "Kaushan Script";
+  font-size:large;
+  color:#061724;
+  background: #d4f1f9;
+  
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: #061724;
+  font-family: "Kaushan Script";
+  font-size:large;
+  font-weight:900;
+  margin-top: 6px;
+  margin-left: 20px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin-right: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+
+  
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 155px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+
+}
+
+
+
+.header .menu-icon .navicon {
+  background: #d4f1f9;
+  display: block;
+  top: 2px;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+  transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+
+.header .menu-icon:hover .navicon {
+  background: #64ffda;
+
+}
+
+
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #d4f1f9;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+  transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+
+.header .menu-icon:hover .navicon:before,.header .menu-icon:hover .navicon:after {
+  background: #64ffda;
+
+}
+
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+
+
+.header .menu-btn:checked ~ .menu {
+  min-height: 100vh;
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+
+.hLTFFw {
+  
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  min-height: 60px;
+  background-color:#061724b6 ;
+  backdrop-filter: blur(10px);
+  transition:  all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+}
+
+
+.bVLcxx {
+    
+    transform: translateY(calc(70px* -1));
+    box-shadow: 0 10px 30px -10px #061724b6;
+}
+
+.leoCdG {
+  transform: translateY(0px);
+  background-color: #06172498;
+  box-shadow: 0 10px 30px -10px #000a11;
+}
+
+
+
+.bVLcxx .git {
+  top:20px;
+  }
+
+
+.leoCdG .git {
+  top:20px;
+
+  }
+  
+  .bVLcxx .links {
+    top:20px;
+    }
+  
+  .leoCdG .links {
+    top:20px;
+  }
+  
+
+  .leoCdG .menu-icon .navicon {
+    top:0px;
+    
+  }
+
+  .leoCdG .circle{
+
+    width: 340px; height: 170px;
+ 
+  
+  }
+
+  .leoCdG .center{
+    top: 45px; left:12px ;
+  
+  }
+  
+
+  
+  .bVLcxx .circle{
+
+    width: 340px; height: 170px;
+ 
+
+  
+  }
+
+  .bVLcxx .center{
+    top: 45px; left:12px ;
+  
+  }
+  /* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .wave {
+    background-color: #d4f1f9;
+    transform: rotate(360deg);
+    transition: all 1s ease;
+    animation: wave 30s linear infinite;
+  }
+  .header li a:hover,
+  .header .menu-btn:hover {
+  border-radius: 20 px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  font-family: "Kaushan Script";
+  font-size:large;
+  color:#061724;
+  text-shadow: -1px 0 #d4f1f9, 0 1px #d4f1f9, 1px 0 #d4f1f9, 0 -1px #d4f1f9;
+  background: transparent;
+  }
+  
+  .header .git{
+  display: flex;
+  align-items: center;
+  right: 0px;
+  top: 25px;
+
+  position: absolute;
+  float: right;
+  text-decoration: none;
+  color: #d4f1f9;
+  font-size:30px;
+  margin-right: 43%;
+  }
+
+
+  .header .links{
+  display: flex;
+  padding-right: 10px;
+  top: 25px;
+  position: absolute;
+  float: right;
+  text-decoration: none;
+  color: #d4f1f9;
+  font-size:30px;
+  margin-right: 44%;
+  }
+
+ 
+  .circle{
+    position: absolute;
+    background: #d4f1f9;
+    width: 500px; height: 180px;
+  }
+
+  .header .logo {
+    margin-left:50px;
+    font-size: x-large;
+    margin-top: 2px;
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret .5s step-end infinite
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 200px }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .header ul {
+    margin-right: 80px;
+  }
+  
+  .bVLcxx .git {
+    top:-100px;
+    }
+    
+    
+    .bVLcxx .links {
+      top:-100px;
+    }
+    
+    
+    .bVLcxx li a{
+      top:-100px;
+  }
+  
+  .leoCdG .git {
+    margin-top:-5px;
+  }
+  
+  
+  .leoCdG .links {
+    margin-top:-5px;
+  }
+  
+  
+  .leoCdG li a{
+    top:0px;
+  }
+
+  .leoCdG .circle{
+
+    width: 400px; height: 180px;
+ 
+  
+  }
+
+  .leoCdG .center{
+    top: 55px; left:12px ;
+  
+  }
+
+  .leoCdG .logo {
+    margin-top: 6px;
+    margin-left: 20px;
+
+  }
+
+  
+  .bVLcxx .circle{
+
+    width: 340px; height: 170px;
+ 
+
+  
+  }
+
+  .bVLcxx .center{
+    top: 45px; left:12px ;
+  
+  }
+}

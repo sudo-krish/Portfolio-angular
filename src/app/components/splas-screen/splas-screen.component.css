@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+.app-splash-screen {
+    background: #061724;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 1;
+  }
+  
+
+  .app-splash-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .circle{
+    position: relative;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    background: #061724;
+    box-shadow: 0px 0px 0 20px #061724, 0 0 0 0px #061724;
+    animation: border 10s ease 1 forwards;
+    cursor: none;
+    align-items: center;
+
+
+  }
+
+  .logo{
+    position: relative;
+    font-family: 'Tilt Prism';
+    font-size: 100px;
+    color: #fff;
+    align-items: center;
+    left: 30px;
+    top: -25px;
+    width: 10px;
+    height: 10px;
+    cursor: none;
+    animation: opacity 5.5s ease-in 0.2s ;
+    opacity: 0;
+  }
+
+@keyframes border{
+  0% {    box-shadow:  0px 0px 0 20px #061724, 0 0 0 10px #fff; }
+  25% {    box-shadow:  0px -135px 0 20px #061724, 0 0 0 10px #fff; } 
+  50% {    box-shadow:  0px -20px 0 20px #061724, 0 0 0 5px #64ffda; } 
+  75% { box-shadow:  0px -3px 0 20px #061724, 0 0 0 1px #64ffda;}
+  100% { box-shadow:  0px 0px 0 20px #061724, 0 0 0 0px #64ffda;}
+  
+}
+
+@keyframes opacity {
+  0% {    opacity: 0;color: white; }
+  40%{color: white;}
+  50% {   opacity: 1; }
+  70% {   opacity: 1; }
+  80%{text-shadow: -0 0 2px #80fcdf,-0 0 3px #80fcdf,-0 0 4px #80fcdf;opacity: 1;color: #64ffda;}
+  85%{opacity: 1;color: #64ffda;}
+}
+
+  
